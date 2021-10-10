@@ -2,11 +2,11 @@
 
 ### Screenshot
 
-![](./components/images/Screenshot.png)
+![](./images/Screenshot.png)
 
 ### Links
 
-- Checkout Live Site URL Here: [live site url](https://jolly-poincare-065667.netlify.app/)
+- Checkout Live Site URL Here: [live site url](https://pensive-payne-40d085.netlify.app/)
 
 ### Built with
 
@@ -14,4 +14,5 @@
 - Styled Components
 - React Router
 - React Scroll
-  -React icons
+- React icons
+

@@ -14,3 +14,4 @@
 - Styled Components
 - React Router
 - React Scroll
+  -React icons

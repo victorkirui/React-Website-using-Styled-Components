@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![](./components/images/Screenshot.png)
+![](./src/images/Screenshot.png)
 
 ### Links
 

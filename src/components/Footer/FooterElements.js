@@ -16,6 +16,7 @@ export const FooterWrapper = styled.div`
 export const FooterLinksContainer = styled.div`
     display:flex;
     justify-content:center;
+    margin-bottom:35px;
 
     @media screen and (max-width:850px){
         padding-top:35px;
@@ -56,6 +57,48 @@ export const FooterLink = styled(Link)`
     text-decoration:none;
     cursor:pointer;
     transition:all 0.3s ease-in-out;
+
+    &:hover{
+        transition:all 0.3s ease-in-out;
+        color:orange;
+    }
+`
+export const SocialMedia = styled.section`
+    max-width:1000px;
+    width:100%;
+`
+export const SocialMediaWrapper = styled.div`
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+
+    @media screen and (max-width:800px){
+        flex-direction:column;
+    }
+`
+export const SocialLogo = styled(Link)`
+    color:orange;
+    font-size:20px;
+    text-decoration:none;
+    cursor:pointer;
+    margin-bottom:16px;
+`
+export const Copyright = styled.small`
+    color:#fff;
+    margin-bottom:16px;
+`
+export const SocialIconItems = styled.div`
+    display:flex;
+    justify-items: space-between;
+    align-items:center;
+`
+export const SocialIconLink = styled.a`
+    color:#fff;
+    font-size:24px;
+    cursor: pointer;
+    transition:all 0.3s ease-in-out;
+    margin:0 10px;
 
     &:hover{
         transition:all 0.3s ease-in-out;

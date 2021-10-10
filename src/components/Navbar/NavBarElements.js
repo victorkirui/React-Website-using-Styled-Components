@@ -4,13 +4,13 @@ import { Link as LinkScroll } from 'react-scroll';
 
 
 export const Nav = styled.nav`
-    background: #000;
+    background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-sie: 1rem;
+    font-size: 1rem;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
 `
 export const NavLogo = styled(LinkRouter)`
-    color:#fff;
+    color:orange;
     font-size:1.5rem;
     justify-self:flex-start;
     display:flex;
@@ -72,11 +72,15 @@ export const NavLinks = styled(LinkScroll)`
     color:#fff;
     text-decoration:none;
     padding:0 1rem;
-    // height:100%;
+    height:100%;
     cursor:pointer; 
 
     &.active{
         border-bottom:3px solid orange;
+    }
+    &:hover{
+        transition:all 0.3s ease-in-out;
+        color:orange;
     }
 `
 export const NavBtn = styled.nav`

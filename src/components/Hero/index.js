@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import { 
     HeroContainer, 
     HeroBg, 
@@ -21,7 +22,7 @@ const HeroSection = () => {
         setHover(!hover);
     }
     return (
-        <HeroContainer>
+        <HeroContainer id="home">
             <HeroBg>
                 <VideoBg autoplay loop muted src={video} type='video/mp4'  />
             </HeroBg>
@@ -34,6 +35,11 @@ const HeroSection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to="signup" 
+                    smooth={true}
+                    spy={true}
+                    exact="true"
+                    duration={500}
+                    offset={-80}
                     onMouseEnter={onHover} 
                     onMouseLeave={onHover}
                     primary="true"
